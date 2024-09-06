@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> form example </title>
+    <style>
+        a {
+            color: white;
+            font-size: 22px;
+            text-decoration: none;
+        }
+        
+        table {
+            border: 20px solid white;
+        }
+    </style>
+</head>
+
+<body bgcolor="#5678ng">
+    <table align="center" cellpadding="15">
+        <tr>
+            <th><a href="form1.html"> contact us </a> </th>
+            <th><a href="form2.html"> login</a></th>
+            <th><a href="form3.html"> create account </a></th>
+            <th><a href="project.html"> My Project </a></th>
+        </tr>
+    </table>
+    <form action="saveuser,py" method="POST">
+        <table align="center" cellpadding="15" bgcolor="red">
+
+            <caption>
+                <h1 style="color:white;"> Create Account </h1>
+            </caption>
+            <tr>
+                <th> First Name </th>
+                <td> <input type="text" placeholder="your first name" /></td>
+                <th> Last Name </th>
+                <td> <input type="text" placeholder="your last name" /></td>
+            </tr>
+            <tr>
+                <th> E-Mail id </th>
+                <td> <input type="email" placeholder="your email id" /></td>
+                <th> Mobile No </th>
+                <td> <input type="number" placeholder="your mobile no" /></td>
+            </tr>
+            <tr>
+                <th> Password </th>
+                <td> <input type="password" placeholder=" enter new password" /></td>
+                <th> Confirm Password </th>
+                <td> <input type="password" placeholder=" re-enter password" /></td>
+            </tr>
+            <tr>
+                <th> Gender </th>
+                <td>
+                    <input type="radio" name="gender" id="male" /> <label for="a"> male</label>
+                    <input type="radio" name="gender" id="female"> <label for="b"> female</label>
+                </td>
+                <th> Date of birth </th>
+                <td> <input type="date" /></td>
+            </tr>
+            <tr>
+                <th> Education </th>
+                <td>
+                    <select>
+                        <option> choose </option>
+                        <option> BCA </option>
+                        <option> MCA </option>
+                        <option> B.TECH </option>
+                        <option> Other </option>
+                    </select>
+                </td>
+                <th> Passsing year </th>
+                <td><input type="number" placeholder="Passsing year" /> </td>
+            </tr>
+            <tr>
+                <th> Hobbies </th>
+                <td colspan="3">
+                    <input type="checkbox" id="a" /> <label for="a"> Book Reading </label>
+                    <input type="checkbox" id="b" /> <label for="b"> Book Writing </label>
+                    <input type="checkbox" id="c" /> <label for="c"> Playing </label>
+                    <input type="checkbox" id="d" /> <label for="d"> Singing </label>
+                </td>
+            </tr>
+            <tr>
+                <th> Profile Photo </th>
+                <td> <input type="file" /></td>
+                <td colspan="2">
+                    <input type="checkbox" checked="checked" /> hide my photo in public </td>
+            </tr>
+            <tr>
+                <th> Full Address </th>
+                <td colspan="3"> <textarea rows="8" cols="70" placeholder="enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="checkbox" checked/> I Agree on Terms & Conditions...
+                </td>
+            </tr>
+            <tr>
+                <th colspan="4">
+                    <button type="submit"> submit </button>
+                    <button type="reset"> clear </button>
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
